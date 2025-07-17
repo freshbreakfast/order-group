@@ -896,22 +896,34 @@
         function sendToLine() {
             let msg = '📦 鮮到味 訂單\n';
             const space = '\u3000\u3000'; // 全形空格
+            let total = 0;
             let hasOrder = false;
+
             for (const [itemName, qty] of Object.entries(cart)) {
                 if (qty > 0) {
-                    msg += `${itemName}${space}x${qty}\n`;
-                    hasOrder = true;
-                }
-            }
+                    const item = items.find(i => i.name === itemName);
+                    if (!item) continue;
 
-            const note = document.getElementById('note').value.trim();
-            if (note) {
-                msg += `\n📌 備註：${note}`;
+                    const unitPrice = item.groupPrice;
+                    const subTotal = unitPrice * qty;
+                    total += subTotal;
+                    hasOrder = true;
+
+                    // 格式：品名 + 單價 + 數量 + 小計
+                    msg += `${itemName}${space}單價：${unitPrice}元 x${qty} = ${subTotal}元\n`;
+                }
             }
 
             if (!hasOrder) {
                 alert('您尚未選擇任何品項喔～');
                 return;
+            }
+
+            msg += `\n💰 訂單總金額：${total}元`;
+
+            const note = document.getElementById('note').value.trim();
+            if (note) {
+                msg += `\n\n📌 備註：${note}`;
             }
 
             const encodedMsg = encodeURIComponent(msg);
