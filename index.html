@@ -3,58 +3,142 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>鮮到味 商品列表</title>
+    <title>鮮到味 點餐頁</title>
     <style>
         body {
             font-family: sans-serif;
-            padding: 1rem;
-            background: #f9f9f9;
+            padding: 20px;
+            max-width: 700px;
+            margin: auto;
         }
 
         h2 {
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 0.25rem;
+            margin-bottom: 10px;
         }
 
-        .product {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1rem;
+        #category-nav {
+            margin-bottom: 20px;
+        }
+
+        #category-nav button {
+            padding: 6px 12px;
+            margin-right: 8px;
+            border: 1px solid #06c755;
             background: white;
-            padding: 1rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 0 5px #ddd;
-        }
-
-        .product img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-        }
-
-        .product-info {
-            flex: 1;
-        }
-
-        .price {
-            color: #e91e63;
+            cursor: pointer;
+            border-radius: 6px;
             font-weight: bold;
         }
 
-        nav button {
-            margin: 0.25rem;
+        #category-nav button.active {
+            background: #06c755;
+            color: white;
+        }
+
+        .item {
+            margin-bottom: 24px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .item img {
+            max-width: 100%;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .price {
+            color: #444;
+            margin-bottom: 8px;
+        }
+
+        .retail {
+            text-decoration: line-through;
+            color: #999;
+            margin-right: 10px;
+        }
+
+        button.qty-btn {
+            padding: 4px 10px;
+            margin: 0 6px;
+        }
+
+        .qty {
+            display: inline-block;
+            width: 30px;
+            text-align: center;
+        }
+
+        #lineBtn {
+            display: inline-block;
+            margin-top: 20px;
+            background: #06c755;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+
+        #note {
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        .product-list {
+            display: none;
+        }
+
+        .product-list.active {
+            display: block;
         }
     </style>
 </head>
 
 <body>
+    <h2>鮮到味 點餐頁</h2>
 
-    <h1>鮮到味 商品清單</h1>
-    <nav id="category-nav"></nav>
-    <section id="product-list"></section>
+    <!-- 分類按鈕 -->
+    <div id="category-nav"></div>
+
+    <!-- 商品清單容器 -->
+    <div id="product-container"></div>
+
+    <!-- ✏️ 備註區 -->
+    <textarea id="note" placeholder="📌 請輸入備註：如過敏、地址、電話等..."></textarea>
+
+    <!-- ✅ 傳送按鈕 -->
+    <button id="lineBtn" onclick="sendToLine()">✅ 送出點餐</button>
 
     <script>
+        // 分類與 emoji 對照表
+        const categoryEmojis = {
+            "豬肉類": "🐷",
+            "海鮮類": "🐟",
+            "雞肉類": "🐔",
+            "餅.pizza.麵包": "🥯",
+            "餃類": "🥟",
+            "鐵板麵": "🍝",
+            "飲品": "🥤",
+            "奶精": "🥛",
+            "熱門商品": "🔥",
+            "果醬": "🍯",
+            "堅果": "🥜",
+        };
+
         const items = [
             {
                 category: ["豬肉類"],
@@ -748,41 +832,97 @@
             }
         ];
 
-
-        // 抓出所有分類
-        const categories = Array.from(
-            new Set(items.flatMap(item => item.categories))
-        );
-
-        const nav = document.getElementById("category-nav");
-        const list = document.getElementById("product-list");
-
-        function showCategory(cat) {
-            list.innerHTML = "";
-            const filtered = items.filter(i => i.categories.includes(cat));
-            filtered.forEach(item => {
-                const el = document.createElement("div");
-                el.className = "product";
-                el.innerHTML = `
-          <img src="${item.image || 'https://via.placeholder.com/100'}" alt="${item.name}" />
-          <div class="product-info">
-            <div>${item.name}</div>
-            <div class="price">團購價：${item.group} 元<br/>原價：${item.retail} 元</div>
-          </div>
-        `;
-                list.appendChild(el);
-            });
-        }
-
-        categories.forEach(cat => {
-            const btn = document.createElement("button");
-            btn.textContent = cat;
-            btn.onclick = () => showCategory(cat);
-            nav.appendChild(btn);
+        // 初始化購物車
+        const cart = {};
+        items.forEach(item => {
+            cart[item.name] = 0;
         });
 
-        // 預設顯示第一分類
-        showCategory(categories[0]);
+        // 取得所有分類 (去重)
+        const categories = Array.from(new Set(items.flatMap(item => item.category)));
+
+        const nav = document.getElementById("category-nav");
+        const container = document.getElementById("product-container");
+
+        // 建立分類按鈕與商品列表區塊
+        categories.forEach((cat, index) => {
+            // 建分類按鈕
+            const btn = document.createElement("button");
+            btn.textContent = (categoryEmojis[cat] || "") + " " + cat;
+            if (index === 0) btn.classList.add("active");
+            btn.addEventListener("click", () => {
+                // 切換按鈕 active 狀態
+                [...nav.children].forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+                // 顯示對應分類商品，隱藏其他
+                [...container.children].forEach(div => div.classList.remove("active"));
+                const listDiv = container.querySelector(`div[data-category="${cat}"]`);
+                if (listDiv) listDiv.classList.add("active");
+            });
+            nav.appendChild(btn);
+
+            // 建分類商品列表容器
+            const listDiv = document.createElement("div");
+            listDiv.className = "product-list";
+            if (index === 0) listDiv.classList.add("active");
+            listDiv.dataset.category = cat;
+
+            // 篩選該分類商品
+            items.filter(item => item.category.includes(cat))
+                .forEach(item => {
+                    const div = document.createElement("div");
+                    div.className = "item";
+                    div.innerHTML = `
+               <div class="name">${item.name}</div>
+               <img src="${item.photo || 'https://via.placeholder.com/300'}" alt="${item.name}" />
+               <div class="price">
+                 原價：<span class="retail">$${item.retailPrice}</span> 💰 團購價：$${item.groupPrice}
+               </div>
+               <button class="qty-btn" onclick="changeQty('${item.name}', -1)">－</button>
+               <span class="qty" id="qty-${item.name}">0</span>
+               <button class="qty-btn" onclick="changeQty('${item.name}', 1)">＋</button>
+             `;
+                    listDiv.appendChild(div);
+                });
+
+            container.appendChild(listDiv);
+        });
+
+        function changeQty(name, delta) {
+            cart[name] = Math.max(0, cart[name] + delta);
+            document.getElementById('qty-' + name).textContent = cart[name];
+        }
+
+        function sendToLine() {
+            let msg = '📦 鮮到味 訂單\n';
+            const space = '\u3000\u3000'; // 全形空格
+            let hasOrder = false;
+            for (const [itemName, qty] of Object.entries(cart)) {
+                if (qty > 0) {
+                    msg += `${itemName}${space}x${qty}\n`;
+                    hasOrder = true;
+                }
+            }
+
+            const note = document.getElementById('note').value.trim();
+            if (note) {
+                msg += `\n📌 備註：${note}`;
+            }
+
+            if (!hasOrder) {
+                alert('您尚未選擇任何品項喔～');
+                return;
+            }
+
+            const encodedMsg = encodeURIComponent(msg);
+            const lineUrl = `https://line.me/R/oaMessage/@567ncwhd/?text=${encodedMsg}`;
+            window.open(lineUrl, '_blank');
+            scrollToTop();
+        }
+
+        function scrollToTop() {
+            setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 500);
+        }
     </script>
 </body>
 
