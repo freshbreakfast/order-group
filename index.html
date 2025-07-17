@@ -898,7 +898,7 @@
 
         function sendToLine() {
             let msg = '📦 鮮到味 訂單\n';
-            const space = '\u3000\u3000'; // 全形空格
+            const space = '';
             let total = 0;
             let hasOrder = false;
 
@@ -913,7 +913,7 @@
                     hasOrder = true;
 
                     // 格式：品名 + 數量 + 小計
-                    msg += `${itemName}${space}x${qty} = ${subTotal}元\n`;
+                    msg += `${itemName}${space}x${qty}=${subTotal}元\n`;
                 }
             }
 
