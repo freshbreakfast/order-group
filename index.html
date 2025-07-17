@@ -876,7 +876,7 @@
                     const div = document.createElement("div");
                     div.className = "item";
                     div.innerHTML = `
-               <div class="name">${item.name}</div>
+               <div class="name">${item.name} （${item.unit} / ${item.storage}）</div>
                <img src="${item.photo || 'https://via.placeholder.com/300'}" alt="${item.name}" />
                <div class="price">
                  原價：<span class="retail">$${item.retailPrice}</span> 💰 團購價：$${item.groupPrice}
