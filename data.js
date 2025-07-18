@@ -8,7 +8,7 @@ const categoryEmojis = {
     "餃類": "🥟",
     "鐵板麵": "🍝",
     "飲品": "🥤",
-    "奶精": "🥛",
+    "奶製品": "🥛",
     "熱門商品": "🔥",
     "果醬": "🍯",
     "堅果": "🥜",
@@ -636,7 +636,7 @@ const items = [
         photo: "https://i.postimg.cc/zBhdDqFp/image.jpg"
     },
     {
-        category: ["奶精"],
+        category: ["奶製品"],
         model: "3-00008",
         name: "佳純保久乳1L",
         unit: "罐",
@@ -656,7 +656,7 @@ const items = [
         photo: "https://i.postimg.cc/SR2mx2t3/image.jpg"
     },
     {
-        category: ["起司"],
+        category: ["奶製品"],
         model: "2-00009",
         name: "安佳起士84片",
         unit: "包",
@@ -664,6 +664,56 @@ const items = [
         retailPrice: 400,
         storage: "冷藏",
         photo: "https://i.postimg.cc/wjSLqL48/image.png"
+    },
+    {
+        category: ["奶製品"],
+        model: "2-00010",
+        name: "國農牛奶(原味/巧克力/草莓/果汁/麥芽)24瓶 不得混搭",
+        unit: "箱",
+        groupPrice: 510,
+        retailPrice: 540,
+        storage: "常溫",
+        photo: ""
+    },
+    {
+        category: ["奶製品"],
+        model: "2-00011",
+        name: "台農牛奶(原味/巧克力/草莓/果汁/麥芽)",
+        unit: "瓶",
+        groupPrice: 25,
+        retailPrice: 27,
+        storage: "常溫",
+        photo: ""
+    },
+    {
+        category: ["奶製品"],
+        model: "2-00011",
+        name: "台農牛奶(原味/巧克力/草莓/果汁/麥芽)24瓶",
+        unit: "箱",
+        groupPrice: 480,
+        retailPrice: 510,
+        storage: "常溫",
+        photo: ""
+    },
+    {
+        category: ["奶製品"],
+        model: "2-00011",
+        name: "外埔農會牛奶(原味/巧克力/草莓/果汁/麥芽)",
+        unit: "瓶",
+        groupPrice: 25,
+        retailPrice: 27,
+        storage: "常溫",
+        photo: ""
+    },
+    {
+        category: ["奶製品"],
+        model: "2-00011",
+        name: "外埔農會牛奶(原味/巧克力/草莓/果汁/麥芽)24瓶",
+        unit: "箱",
+        groupPrice: 450,
+        retailPrice: 480,
+        storage: "常溫",
+        photo: ""
     },
     {
         category: ["果醬"],
