@@ -2,15 +2,17 @@
 <html lang="zh-Hant">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>鮮到味 點餐頁</title>
     <style>
         body {
-            font-family: sans-serif;
-            padding: 20px;
             max-width: 700px;
             margin: auto;
+            padding: 20px;
+            font-family: sans-serif;
+            box-sizing: border-box;
         }
+
 
         h2 {
             margin-bottom: 10px;
@@ -52,9 +54,10 @@
             border-radius: 10px;
         }
 
+        /* 讓圖片寬度隨容器縮放，不超過 100% */
         .item img {
-            width: 200px;
-            height: 200px;
+            max-width: 100%;
+            height: auto;
             border-radius: 6px;
             margin: 10px 0;
         }
@@ -128,6 +131,36 @@
 
         .product-list.active {
             display: block;
+        }
+
+        /* 手機版下調整padding、字體、按鈕尺寸 */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+                max-width: 100%;
+            }
+
+            #category-nav button {
+                padding: 6px 12px;
+                font-size: 14px;
+                margin: 4px 4px 8px 0;
+            }
+
+            .item {
+                padding: 8px;
+                margin-bottom: 16px;
+            }
+
+            button.qty-btn {
+                padding: 6px 12px;
+                font-size: 16px;
+                margin: 0 4px;
+            }
+
+            #lineBtn {
+                padding: 12px 24px;
+                font-size: 1em;
+            }
         }
     </style>
 </head>
