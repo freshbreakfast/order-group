@@ -548,7 +548,7 @@ const items = [
     {
         category: ["飲品", "熱門商品"],
         model: "2-00033",
-        name: "(口栓)鮮到味豆漿2500ml",
+        name: "(口栓)鮮到味有糖豆漿2500ml",
         unit: "包",
         groupPrice: 69,
         retailPrice: 80,
@@ -558,7 +558,7 @@ const items = [
     {
         category: ["飲品", "熱門商品"],
         model: "2-00034",
-        name: "(口栓)無糖豆漿2500ml",
+        name: "(口栓)鮮到味無糖豆漿2500ml",
         unit: "包",
         groupPrice: 69,
         retailPrice: 80,
