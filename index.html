@@ -228,7 +228,7 @@
                  原價：<span class="retail">$${item.retailPrice}</span> 💰 團購價：$${item.groupPrice}
                </div>
                <button class="qty-btn" onclick="changeQty('${item.name}', -1)">－</button>
-               <span class="qty" id="qty-${item.name}">0</span>
+               <span class="qty" data-name="${item.name}">0</span>
                <button class="qty-btn" onclick="changeQty('${item.name}', 1)">＋</button>
              `;
                     listDiv.appendChild(div);
@@ -238,8 +238,12 @@
         });
 
         function changeQty(name, delta) {
-            cart[name] = Math.max(0, cart[name] + delta);
-            document.getElementById('qty-' + name).textContent = cart[name];
+            cart[name] = Math.max(0, (cart[name] || 0) + delta);
+
+            // 更新所有同名商品的數量顯示
+            document.querySelectorAll(`[data-name="${name}"]`).forEach(span => {
+                span.textContent = cart[name];
+            });
         }
 
         function sendToLine() {
