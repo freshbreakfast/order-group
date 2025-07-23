@@ -1,15 +1,15 @@
 // 分類與 emoji 對照表
 const categoryEmojis = {
+    "熱門商品": "🔥",
+    "餅.pizza.麵包": "🥯",
     "豬肉類": "🐷",
     "雞肉類": "🐔",
     "牛肉類": "🐂",
     "海鮮類": "🐟",
-    "餅.pizza.麵包": "🥯",
     "餃類": "🥟",
     "鐵板麵": "🍝",
-    "飲品": "🥤",
     "奶製品": "🥛",
-    "熱門商品": "🔥",
+    "飲品": "🥤",
     "果醬": "🍯",
     "堅果": "🥜",
 };
@@ -19,7 +19,7 @@ const items = [
         category: ["豬肉類"],
         model: "1-00001",
         name: "鮮到味漢堡肉20粒",
-        unit: "盒",
+        unit: "盤",
         groupPrice: 155,
         retailPrice: 170,
         storage: "冷凍",
@@ -510,8 +510,8 @@ const items = [
         model: "1-00063",
         name: "宮保雞丁醬10包",
         unit: "袋",
-        groupPrice: 215,
-        retailPrice: 225,
+        groupPrice: 265,
+        retailPrice: 295,
         storage: "冷凍",
         photo: "https://i.postimg.cc/bYFNh1Yy/image.png"
     },
@@ -520,8 +520,8 @@ const items = [
         model: "1-00064",
         name: "沙茶豬柳醬10包",
         unit: "袋",
-        groupPrice: 205,
-        retailPrice: 225,
+        groupPrice: 265,
+        retailPrice: 295,
         storage: "冷凍",
         photo: "https://i.postimg.cc/y8GF3DTs/1.png"
     },
@@ -531,7 +531,7 @@ const items = [
         name: "黑胡椒醬140G(含麵)",
         unit: "包",
         groupPrice: 25,
-        retailPrice: 22,
+        retailPrice: 28,
         storage: "冷藏",
         photo: "https://i.postimg.cc/Dy0X1Bt3/黑胡椒.jpg"
     },
@@ -541,7 +541,7 @@ const items = [
         name: "蘑菇醬140G(含麵)",
         unit: "包",
         groupPrice: 25,
-        retailPrice: 22,
+        retailPrice: 28,
         storage: "冷藏",
         photo: "https://i.postimg.cc/Dy0X1Bt3/黑胡椒.jpg"
     },
@@ -667,7 +667,7 @@ const items = [
     },
     {
         category: ["奶製品"],
-        model: "2-00010",
+        model: "3-00082",
         name: "國農牛奶(原味/巧克力/草莓/果汁/麥芽)24瓶 不得混搭",
         unit: "箱",
         groupPrice: 510,
@@ -677,7 +677,7 @@ const items = [
     },
     {
         category: ["奶製品"],
-        model: "2-00011",
+        model: "3-00088",
         name: "台農牛奶(原味/巧克力/草莓/果汁/麥芽)",
         unit: "瓶",
         groupPrice: 25,
@@ -687,7 +687,7 @@ const items = [
     },
     {
         category: ["奶製品"],
-        model: "2-00011",
+        model: "3-00088",
         name: "台農牛奶(原味/巧克力/草莓/果汁/麥芽)24瓶",
         unit: "箱",
         groupPrice: 480,
@@ -697,7 +697,7 @@ const items = [
     },
     {
         category: ["奶製品"],
-        model: "2-00011",
+        model: "3-00099",
         name: "外埔農會牛奶(原味/巧克力/草莓/果汁/麥芽)",
         unit: "瓶",
         groupPrice: 25,
@@ -707,7 +707,7 @@ const items = [
     },
     {
         category: ["奶製品"],
-        model: "2-00011",
+        model: "3-00099",
         name: "外埔農會牛奶(原味/巧克力/草莓/果汁/麥芽)24瓶",
         unit: "箱",
         groupPrice: 450,
