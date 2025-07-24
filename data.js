@@ -11,7 +11,7 @@ const categoryEmojis = {
     "鐵板麵": "🍝",
     "奶製品": "🥛",
     "飲品": "🥤",
-    "果醬": "🍯",
+    "果醬類": "🍯",
     "堅果": "🥜",
 };
 
@@ -695,51 +695,6 @@ const items = [
         photo: "https://i.postimg.cc/zBhdDqFp/image.jpg"
     },
     {
-        category: ["餅.pizza.麵包", "熱門商品"],
-        model: "2-00013",
-        name: "蘿蔔糕",
-        desc: "18片",
-        unit: "包",
-        groupPrice: 205,
-        retailPrice: 225,
-        storage: "冷藏",
-        photo: "https://i.postimg.cc/Y9Lk2sCt/image.jpg"
-    },
-    {
-        category: ["果醬"],
-        model: "3-00001",
-        name: "沙拉",
-        desc: "1台斤",
-        unit: "包",
-        groupPrice: 60,
-        retailPrice: 70,
-        storage: "常溫",
-        photo: "https://i.postimg.cc/pXsBH9tR/image.jpg"
-    },
-    {
-        category: ["果醬"],
-        model: "3-00020",
-        name: "藍莓醬",
-        desc: "900g",
-        unit: "罐",
-        groupPrice: 185,
-        retailPrice: 200,
-        storage: "常溫",
-        photo: "https://i.postimg.cc/jqF5YKkB/image.jpg"
-    },
-    {
-        category: ["果醬"],
-        model: "3-00026",
-        name: "奶油(小)",
-        desc: "450g",
-        unit: "罐",
-        groupPrice: 135,
-        retailPrice: 145,
-        storage: "常溫",
-        photo: "https://i.postimg.cc/G2vQwqb5/image.jpg"
-    },
-    {
-        category: ["堅果"],
         model: "3-00241",
         name: "綜合堅果",
         desc: "600g",
