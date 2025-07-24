@@ -187,60 +187,58 @@
             cart[item.name] = 0;
         });
 
-        // 取得所有分類 (去重)
-        const categories = Array.from(new Set(items.flatMap(item => item.category)));
-
         const nav = document.getElementById("category-nav");
         const container = document.getElementById("product-container");
 
-        // 建立分類按鈕與商品列表區塊
-        categories.forEach((cat, index) => {
-            // 建分類按鈕
+        // 依 categoryEmojis 的順序建立分類按鈕與商品列表
+        Object.keys(categoryEmojis).forEach((cat, index) => {
+            const categoryItems = items.filter(item => item.category.includes(cat));
+            if (categoryItems.length === 0) return; // 若無商品，略過此分類
+
+            // 建立分類按鈕
             const btn = document.createElement("button");
-            btn.textContent = (categoryEmojis[cat] || "") + " " + cat;
+            btn.textContent = categoryEmojis[cat] + " " + cat;
             if (index === 0) btn.classList.add("active");
+
             btn.addEventListener("click", () => {
-                // 切換按鈕 active 狀態
+                // 切換 active 樣式
                 [...nav.children].forEach(b => b.classList.remove("active"));
                 btn.classList.add("active");
-                // 顯示對應分類商品，隱藏其他
+
+                // 顯示對應分類商品
                 [...container.children].forEach(div => div.classList.remove("active"));
                 const listDiv = container.querySelector(`div[data-category="${cat}"]`);
                 if (listDiv) listDiv.classList.add("active");
             });
             nav.appendChild(btn);
 
-            // 建分類商品列表容器
+            // 建分類商品容器
             const listDiv = document.createElement("div");
             listDiv.className = "product-list";
             if (index === 0) listDiv.classList.add("active");
             listDiv.dataset.category = cat;
 
-            // 篩選該分類商品
-            items.filter(item => item.category.includes(cat))
-                .forEach(item => {
-                    const div = document.createElement("div");
-                    div.className = "item";
-                    div.innerHTML = `
-               <div class="name">${item.name}/${item.unit} (${item.storage})</div>
-               <img src="${item.photo || 'https://via.placeholder.com/300'}" />
-               <div class="price">
-                 原價：<span class="retail">$${item.retailPrice}</span> 💰 團購價：$${item.groupPrice}
-               </div>
-               <button class="qty-btn" onclick="changeQty('${item.name}', -1)">－</button>
-               <span class="qty" data-name="${item.name}">0</span>
-               <button class="qty-btn" onclick="changeQty('${item.name}', 1)">＋</button>
-             `;
-                    listDiv.appendChild(div);
-                });
+            categoryItems.forEach(item => {
+                const div = document.createElement("div");
+                div.className = "item";
+                div.innerHTML = `
+                <div class="name">${item.name}&nbsp;&nbsp;&nbsp;${item.desc}/${item.unit} (${item.storage})</div>
+                <img src="${item.photo || 'https://via.placeholder.com/300'}" />
+                <div class="price">
+                    原價：<span class="retail">$${item.retailPrice}</span> 💰 團購價：$${item.groupPrice}
+                </div>
+                <button class="qty-btn" onclick="changeQty('${item.name}', -1)">－</button>
+                <span class="qty" data-name="${item.name}">0</span>
+                <button class="qty-btn" onclick="changeQty('${item.name}', 1)">＋</button>
+            `;
+                listDiv.appendChild(div);
+            });
 
             container.appendChild(listDiv);
         });
 
         function changeQty(name, delta) {
             cart[name] = Math.max(0, (cart[name] || 0) + delta);
-
-            // 更新所有同名商品的數量顯示
             document.querySelectorAll(`[data-name="${name}"]`).forEach(span => {
                 span.textContent = cart[name];
             });
@@ -248,7 +246,6 @@
 
         function sendToLine() {
             let msg = '📦 鮮到味 訂單\n';
-            const space = '';
             let total = 0;
             let hasOrder = false;
 
@@ -256,14 +253,11 @@
                 if (qty > 0) {
                     const item = items.find(i => i.name === itemName);
                     if (!item) continue;
-
                     const unitPrice = item.groupPrice;
                     const subTotal = unitPrice * qty;
                     total += subTotal;
                     hasOrder = true;
-
-                    // 格式：品名 + 數量 + 小計
-                    msg += `${itemName}${space} x${qty}\n`;
+                    msg += `${itemName} x ${qty}\n`;
                 }
             }
 
@@ -273,7 +267,6 @@
             }
 
             msg += `\n💰 訂單總金額：${total}元`;
-
             const note = document.getElementById('note').value.trim();
             if (note) {
                 msg += `\n\n📌 備註：${note}`;
@@ -289,6 +282,7 @@
             setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 500);
         }
     </script>
+
 </body>
 
 </html>
