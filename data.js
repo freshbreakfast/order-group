@@ -40,7 +40,7 @@ const items = [
         category: ["豬肉類", "熱門商品"],
         model: "1-00003",
         name: "全肉豬排",
-        desc: "鮮到味 非組合肉 50g＊20片",
+        desc: "鮮到味 50g＊20片",
         unit: "盒",
         groupPrice: 255,
         retailPrice: 280,
