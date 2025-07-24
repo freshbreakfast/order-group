@@ -202,7 +202,8 @@ const items = [
         retailPrice: 280,
         storage: "冷凍",
         photo: "https://i.postimg.cc/15W28KnT/2.jpg"
-    }, {
+    }, 
+    {
         category: ["雞肉類", "熱門商品"],
         model: "1-00027",
         name: "(辣味)卡啦雞腿",
@@ -698,6 +699,7 @@ const items = [
         photo: "https://i.postimg.cc/zBhdDqFp/image.jpg"
     },
     {
+        category: ["堅果"],
         model: "3-00241",
         name: "綜合堅果",
         desc: "600g",
