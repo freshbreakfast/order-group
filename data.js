@@ -37,8 +37,7 @@ const items = [
         retailPrice: 225,
         storage: "冷凍",
         photo: "https://i.postimg.cc/Kjy0RC9b/image.jpg"
-    }, 
-    {
+    }, {
         category: ["豬肉類", "熱門商品"],
         model: "1-00003",
         name: "全肉豬排",
@@ -202,8 +201,7 @@ const items = [
         retailPrice: 280,
         storage: "冷凍",
         photo: "https://i.postimg.cc/15W28KnT/2.jpg"
-    }, 
-    {
+    }, {
         category: ["雞肉類", "熱門商品"],
         model: "1-00027",
         name: "(辣味)卡啦雞腿",
@@ -391,7 +389,7 @@ const items = [
         photo: "https://i.postimg.cc/Fz9jtvWY/image.jpg"
     },
     {
-        category: ["薯製品"],
+        category: ["餅.pizza.麵包"],
         model: "1-00036",
         name: "細薯",
         desc: "2.5kg",
@@ -400,9 +398,8 @@ const items = [
         retailPrice: 275,
         storage: "冷凍",
         photo: "https://i.postimg.cc/qBbtB2gb/image.jpg"
-    }, 
-    {
-        category: ["薯製品"],
+    }, {
+        category: ["餅.pizza.麵包"],
         model: "1-00037",
         name: "新脆薯(粗)",
         desc: "2kg",
@@ -413,7 +410,7 @@ const items = [
         photo: "https://i.postimg.cc/d3zYTmDG/image.jpg"
     },
     {
-        category: ["薯製品"],
+        category: ["餅.pizza.麵包"],
         model: "1-00085",
         name: "美國薯餅",
         desc: "20片",
@@ -598,8 +595,7 @@ const items = [
         retailPrice: 28,
         storage: "冷藏",
         photo: "https://i.postimg.cc/Dy0X1Bt3/黑胡椒.jpg"
-    }, 
-    {
+    }, {
         category: ["飲品", "熱門商品"],
         model: "2-00033",
         name: "有糖豆漿(有蓋)",
@@ -699,10 +695,54 @@ const items = [
         photo: "https://i.postimg.cc/zBhdDqFp/image.jpg"
     },
     {
+        category: ["餅.pizza.麵包", "熱門商品"],
+        model: "2-00013",
+        name: "蘿蔔糕",
+        desc: "18片",
+        unit: "包",
+        groupPrice: 205,
+        retailPrice: 225,
+        storage: "冷藏",
+        photo: "https://i.postimg.cc/Y9Lk2sCt/image.jpg"
+    },
+    {
+        category: ["果醬類"],
+        model: "3-00001",
+        name: "沙拉",
+        desc: "1台斤",
+        unit: "包",
+        groupPrice: 60,
+        retailPrice: 70,
+        storage: "常溫",
+        photo: "https://i.postimg.cc/pXsBH9tR/image.jpg"
+    },
+    {
+        category: ["果醬類"],
+        model: "3-00020",
+        name: "藍莓醬",
+        desc: "900g",
+        unit: "罐",
+        groupPrice: 185,
+        retailPrice: 200,
+        storage: "常溫",
+        photo: "https://i.postimg.cc/jqF5YKkB/image.jpg"
+    },
+    {
+        category: ["果醬類"],
+        model: "3-00026",
+        name: "奶油(小)",
+        desc: "450g",
+        unit: "罐",
+        groupPrice: 135,
+        retailPrice: 145,
+        storage: "常溫",
+        photo: "https://i.postimg.cc/G2vQwqb5/image.jpg"
+    },
+    {
         category: ["堅果"],
         model: "3-00241",
         name: "綜合堅果",
-        desc: "600g",
+        desc: "600ｇ",
         unit: "桶",
         groupPrice: 310,
         retailPrice: 340,
@@ -734,7 +774,7 @@ const items = [
     {
         category: ["奶製品"],
         model: "3-00082",
-        name: "國農牛奶＊箱   不能混搭",
+        name: "國農牛奶＊箱  不能混搭",
         desc: "(原味/巧克力/草莓/果汁/麥芽) 24瓶",
         unit: "箱",
         groupPrice: 510,
