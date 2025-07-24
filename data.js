@@ -37,7 +37,8 @@ const items = [
         retailPrice: 225,
         storage: "冷凍",
         photo: "https://i.postimg.cc/Kjy0RC9b/image.jpg"
-    }, {
+    }, 
+    {
         category: ["豬肉類", "熱門商品"],
         model: "1-00003",
         name: "全肉豬排",
@@ -398,7 +399,8 @@ const items = [
         retailPrice: 275,
         storage: "冷凍",
         photo: "https://i.postimg.cc/qBbtB2gb/image.jpg"
-    }, {
+    }, 
+    {
         category: ["薯製品"],
         model: "1-00037",
         name: "新脆薯(粗)",
@@ -595,7 +597,8 @@ const items = [
         retailPrice: 28,
         storage: "冷藏",
         photo: "https://i.postimg.cc/Dy0X1Bt3/黑胡椒.jpg"
-    }, {
+    }, 
+    {
         category: ["飲品", "熱門商品"],
         model: "2-00033",
         name: "有糖豆漿(有蓋)",
