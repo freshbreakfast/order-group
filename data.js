@@ -773,7 +773,7 @@ const items = [
     {
         category: ["奶製品"],
         model: "3-00082",
-        name: "國農牛奶＊箱  不能混搭",
+        name: "國農牛奶＊箱   不能混搭",
         desc: "(原味/巧克力/草莓/果汁/麥芽) 24瓶",
         unit: "箱",
         groupPrice: 510,
