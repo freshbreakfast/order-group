@@ -7,6 +7,7 @@ const categoryEmojis = {
     "牛肉類": "🐂",
     "海鮮類": "🐟",
     "餃類": "🥟",
+    "薯製品": "🍟"
     "鐵板麵": "🍝",
     "奶製品": "🥛",
     "飲品": "🥤",
@@ -388,7 +389,7 @@ const items = [
         photo: "https://i.postimg.cc/Fz9jtvWY/image.jpg"
     },
     {
-        category: ["餅.pizza.麵包"],
+        category: ["薯製品"],
         model: "1-00036",
         name: "細薯",
         desc: "2.5kg",
@@ -398,7 +399,7 @@ const items = [
         storage: "冷凍",
         photo: "https://i.postimg.cc/qBbtB2gb/image.jpg"
     }, {
-        category: ["餅.pizza.麵包"],
+        category: ["薯製品"],
         model: "1-00037",
         name: "新脆薯(粗)",
         desc: "2kg",
@@ -409,7 +410,7 @@ const items = [
         photo: "https://i.postimg.cc/d3zYTmDG/image.jpg"
     },
     {
-        category: ["餅.pizza.麵包"],
+        category: ["薯製品"],
         model: "1-00085",
         name: "美國薯餅",
         desc: "20片",
