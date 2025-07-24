@@ -741,7 +741,7 @@ const items = [
         category: ["堅果"],
         model: "3-00241",
         name: "綜合堅果",
-        desc: "600ｇ",
+        desc: "600g",
         unit: "桶",
         groupPrice: 310,
         retailPrice: 340,
