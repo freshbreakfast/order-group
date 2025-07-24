@@ -390,38 +390,6 @@ const items = [
     },
     {
         category: ["餅.pizza.麵包"],
-        model: "1-00036",
-        name: "細薯",
-        desc: "2.5kg",
-        unit: "包",
-        groupPrice: 250,
-        retailPrice: 275,
-        storage: "冷凍",
-        photo: "https://i.postimg.cc/qBbtB2gb/image.jpg"
-    }, {
-        category: ["餅.pizza.麵包"],
-        model: "1-00037",
-        name: "新脆薯(粗)",
-        desc: "2kg",
-        unit: "包",
-        groupPrice: 255,
-        retailPrice: 280,
-        storage: "冷凍",
-        photo: "https://i.postimg.cc/d3zYTmDG/image.jpg"
-    },
-    {
-        category: ["餅.pizza.麵包"],
-        model: "1-00085",
-        name: "美國薯餅",
-        desc: "20片",
-        unit: "條",
-        groupPrice: 190,
-        retailPrice: 200,
-        storage: "冷凍",
-        photo: "https://i.postimg.cc/Xvbq18DJ/1.jpg"
-    },
-    {
-        category: ["餅.pizza.麵包"],
         model: "1-00047",
         name: "可頌堡",
         desc: "1入",
