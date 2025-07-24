@@ -416,7 +416,7 @@ const items = [
         name: "乳酪燒餅",
         desc: "10入",
         unit: "盒",
-        groupPrice: 150,
+        groupPrice: 160,
         retailPrice: 170,
         storage: "冷凍",
         photo: "https://i.postimg.cc/zGW3kM76/image.png"
