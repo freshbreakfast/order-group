@@ -262,7 +262,7 @@ const items = [
         name: "香香雞",
         desc: "正點 1kg",
         unit: "包",
-        groupPrice: 220,
+        groupPrice: 230,
         retailPrice: 240,
         storage: "冷凍",
         photo: "https://i.postimg.cc/7ZCSrmVn/香香雞.jpg"
