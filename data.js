@@ -739,6 +739,39 @@ const items = [
         photo: "https://i.postimg.cc/G2vQwqb5/image.jpg"
     },
     {
+        category: ["薯製品"],
+        model: "1-00036",
+        name: "細薯",
+        desc: "2.5kg",
+        unit: "包",
+        groupPrice: 250,
+        retailPrice: 275,
+        storage: "冷凍",
+        photo: "https://i.postimg.cc/qBbtB2gb/image.jpg"
+    },
+    {
+        category: ["薯製品"],
+        model: "1-00037",
+        name: "新脆薯(粗)",
+        desc: "2kg",
+        unit: "包",
+        groupPrice: 255,
+        retailPrice: 280,
+        storage: "冷凍",
+        photo: "https://i.postimg.cc/qBbtB2gb/image.jpg"
+    },
+    {
+        category: ["薯製品"],
+        model: "1-00085",
+        name: "美國薯餅",
+        desc: "20片",
+        unit: "條",
+        groupPrice: 190,
+        retailPrice: 200,
+        storage: "冷凍",
+        photo: "https://i.postimg.cc/Xvbq18DJ/1.jpg"
+    },
+    {
         category: ["堅果"],
         model: "3-00241",
         name: "綜合堅果",
