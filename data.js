@@ -202,7 +202,7 @@ const items = [
         storage: "冷凍",
         photo: "https://i.postimg.cc/15W28KnT/2.jpg"
     }, {
-        category: ["雞肉類", "熱門商品"],
+        category: ["雞肉類"],
         model: "1-00027",
         name: "(辣味)卡啦雞腿",
         desc: "10入",
@@ -444,7 +444,7 @@ const items = [
         photo: "https://i.postimg.cc/4xMbYrd0/image.jpg"
     },
     {
-        category: ["餅.pizza.麵包", "熱門商品"],
+        category: ["餅.pizza.麵包"],
         model: "1-00053",
         name: "鬆餅",
         desc: "6入",
@@ -499,7 +499,7 @@ const items = [
         photo: "https://i.postimg.cc/3wVSHkmd/image.jpg"
     },
     {
-        category: ["熱門商品", "餃類"],
+        category: ["熱門商品"],
         model: "1-00045",
         name: "煎餃(熟水餃)",
         desc: "奇巧 100粒",
@@ -521,7 +521,7 @@ const items = [
         photo: "https://i.postimg.cc/FRFRNKvX/1.jpg"
     },
     {
-        category: ["鐵板麵", "熱門商品"],
+        category: ["鐵板麵"],
         model: "1-00062",
         name: "義大利肉醬麵",
         desc: "1入",
@@ -532,7 +532,7 @@ const items = [
         photo: "https://i.postimg.cc/ZqtvtZ0J/image.jpg"
     },
     {
-        category: ["鐵板麵", "熱門商品"],
+        category: ["鐵板麵"],
         model: "1-00063",
         name: "宮保雞丁醬(含麵)",
         desc: "10包",
