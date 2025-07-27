@@ -309,7 +309,7 @@ const items = [
         groupPrice: 39,
         retailPrice: 49,
         storage: "冷凍",
-        photo: "https://i.postimg.cc/HnZ8fy8N/2.jpg"
+        photo: "https://i.postimg.cc/Dwg9djGb/10.jpg"
     },
     {
         category: ["餅.pizza.麵包"],
@@ -320,7 +320,7 @@ const items = [
         groupPrice: 39,
         retailPrice: 49,
         storage: "冷凍",
-        photo: "https://i.postimg.cc/HnZ8fy8N/2.jpg"
+        photo: "https://i.postimg.cc/Dwg9djGb/10.jpg"
     },
     {
         category: ["餅.pizza.麵包", "熱門商品"],
@@ -583,7 +583,7 @@ const items = [
         groupPrice: 69,
         retailPrice: 80,
         storage: "冷藏",
-        photo: "https://i.postimg.cc/pVCGhbYz/image.png"
+        photo: "https://i.postimg.cc/59Xf9VCK/image.jpg"
     },
     {
         category: ["飲品"],
