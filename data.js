@@ -577,7 +577,7 @@ const items = [
     }, {
         category: ["飲品", "熱門商品"],
         model: "2-00033",
-        name: "有糖豆漿(有蓋)",
+        name: "(有糖)豆漿-有蓋",
         desc: "鮮到味 非基改豆漿 2500ml",
         unit: "包",
         groupPrice: 69,
@@ -588,7 +588,7 @@ const items = [
     {
         category: ["飲品"],
         model: "2-00034",
-        name: "無糖豆漿(有蓋)",
+        name: "(無糖)豆漿-有蓋",
         desc: "鮮到味 非基改豆漿 2500ml",
         unit: "包",
         groupPrice: 69,
