@@ -499,7 +499,7 @@ const items = [
         photo: "https://i.postimg.cc/3wVSHkmd/image.jpg"
     },
     {
-        category: ["熱門商品"],
+        category: ["餃類"],
         model: "1-00045",
         name: "煎餃(熟水餃)",
         desc: "奇巧 100粒",
