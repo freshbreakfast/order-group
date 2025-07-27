@@ -192,7 +192,7 @@ const items = [
         photo: "https://i.postimg.cc/mryDvH0S/韓_式.jpg"
     },
     {
-        category: ["雞肉類", "熱門商品"],
+        category: ["雞肉類"],
         model: "1-00026",
         name: "(原味)卡啦雞腿",
         desc: "10入",
@@ -224,7 +224,7 @@ const items = [
         photo: "https://i.postimg.cc/NfKKKLHg/image.png"
     },
     {
-        category: ["雞肉類", "熱門商品"],
+        category: ["雞肉類"],
         model: "1-00040",
         name: "無骨雞米花",
         desc: "卜蜂 1kg",
@@ -269,6 +269,17 @@ const items = [
     },
     {
         category: ["餅.pizza.麵包", "熱門商品"],
+        model: "2-00013",
+        name: "蘿蔔糕",
+        desc: "18片",
+        unit: "包",
+        groupPrice: 205,
+        retailPrice: 225,
+        storage: "冷藏",
+        photo: "https://i.postimg.cc/Y9Lk2sCt/image.jpg"
+    },
+    {
+        category: ["餅.pizza.麵包", "熱門商品"],
         model: "1-00011",
         name: "蛋餅皮(原味)30片",
         desc: "鮮到味 30片",
@@ -279,7 +290,7 @@ const items = [
         photo: "https://i.postimg.cc/HnZ8fy8N/2.jpg"
     },
     {
-        category: ["餅.pizza.麵包", "熱門商品"],
+        category: ["餅.pizza.麵包"],
         model: "1-00012",
         name: "蛋餅皮(青蔥)30片",
         desc: "鮮到味 30片",
@@ -290,7 +301,7 @@ const items = [
         photo: "https://i.postimg.cc/HnZ8fy8N/2.jpg"
     },
     {
-        category: ["餅.pizza.麵包", "熱門商品"],
+        category: ["餅.pizza.麵包"],
         model: "1-00012-1",
         name: "蛋餅皮(原味)10片",
         desc: "鮮到味 10片",
@@ -301,7 +312,7 @@ const items = [
         photo: "https://i.postimg.cc/HnZ8fy8N/2.jpg"
     },
     {
-        category: ["餅.pizza.麵包", "熱門商品"],
+        category: ["餅.pizza.麵包"],
         model: "1-00012-2",
         name: "蛋餅皮(青蔥)10片",
         desc: "鮮到味 10片",
@@ -334,7 +345,7 @@ const items = [
         photo: "https://i.postimg.cc/GpH7NFBW/image.jpg"
     },
     {
-        category: ["餅.pizza.麵包", "熱門商品"],
+        category: ["餅.pizza.麵包"],
         model: "1-00032",
         name: "地瓜拉餅",
         desc: "5片",
@@ -554,7 +565,7 @@ const items = [
         photo: "https://i.postimg.cc/Dy0X1Bt3/黑胡椒.jpg"
     },
     {
-        category: ["鐵板麵", "熱門商品"],
+        category: ["鐵板麵"],
         model: "2-00002",
         name: "蘑菇醬(含麵)",
         desc: "140g",
@@ -575,7 +586,7 @@ const items = [
         photo: "https://i.postimg.cc/hth1PSSx/image.jpg"
     },
     {
-        category: ["飲品", "熱門商品"],
+        category: ["飲品"],
         model: "2-00034",
         name: "無糖豆漿(有蓋)",
         desc: "鮮到味 2500ml",
@@ -594,7 +605,7 @@ const items = [
         groupPrice: 50,
         retailPrice: 55,
         storage: "冷藏",
-        photo: ""
+        photo: "https://i.postimg.cc/HW6zW0dt/image.jpg"
     },
     {
         category: ["飲品"],
@@ -661,17 +672,6 @@ const items = [
         retailPrice: 75,
         storage: "冷藏",
         photo: "https://i.postimg.cc/zBhdDqFp/image.jpg"
-    },
-    {
-        category: ["餅.pizza.麵包", "熱門商品"],
-        model: "2-00013",
-        name: "蘿蔔糕",
-        desc: "18片",
-        unit: "包",
-        groupPrice: 205,
-        retailPrice: 225,
-        storage: "冷藏",
-        photo: "https://i.postimg.cc/Y9Lk2sCt/image.jpg"
     },
     {
         category: ["果醬類"],
@@ -781,7 +781,7 @@ const items = [
         groupPrice: 510,
         retailPrice: 540,
         storage: "常溫",
-        photo: ""
+        photo: "https://i.postimg.cc/QCcW7rv5/image.jpg"
     },
     {
         category: ["奶製品"],
