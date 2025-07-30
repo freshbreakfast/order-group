@@ -712,8 +712,8 @@ const items = [
         name: "細薯",
         desc: "2.5kg",
         unit: "包",
-        groupPrice: 250,
-        retailPrice: 275,
+        groupPrice: 255,
+        retailPrice: 280,
         storage: "冷凍",
         photo: "https://i.postimg.cc/qBbtB2gb/image.jpg"
     },
