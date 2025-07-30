@@ -594,7 +594,7 @@ const items = [
         groupPrice: 69,
         retailPrice: 80,
         storage: "冷藏",
-        photo: "https://i.postimg.cc/hth1PSSx/image.jpg"
+        photo: "https://i.postimg.cc/xCfrQVrg/image.jpg"
     },
     {
         category: ["飲品"],
