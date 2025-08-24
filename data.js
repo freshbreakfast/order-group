@@ -611,7 +611,7 @@ const items = [
         category: ["飲品"],
         model: "3-00013",
         name: "濃縮百香果汁(良田)",
-        desc: "1500ml",
+        desc: "1200ml",
         unit: "瓶",
         groupPrice: 200,
         retailPrice: 220,
