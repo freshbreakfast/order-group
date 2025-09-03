@@ -690,8 +690,8 @@ const items = [
         name: "藍莓醬",
         desc: "900g",
         unit: "罐",
-        groupPrice: 185,
-        retailPrice: 200,
+        groupPrice: 195,
+        retailPrice: 210,
         storage: "常溫",
         photo: "https://i.postimg.cc/jqF5YKkB/image.jpg"
     },
