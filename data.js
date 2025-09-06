@@ -270,7 +270,7 @@ const items = [
     {
         category: ["餅.pizza.麵包", "熱門商品"],
         model: "2-00013",
-        name: "蘿蔔糕",
+        name: "港式蘿蔔糕",
         desc: "18片",
         unit: "包",
         groupPrice: 205,
@@ -286,7 +286,7 @@ const items = [
         unit: "包",
         groupPrice: 105,
         retailPrice: 120,
-        storage: "冷凍",
+        storage: "素食/冷凍",
         photo: "https://i.postimg.cc/HnZ8fy8N/2.jpg"
     },
     {
@@ -308,7 +308,7 @@ const items = [
         unit: "包",
         groupPrice: 39,
         retailPrice: 49,
-        storage: "冷凍",
+        storage: "素食/冷凍",
         photo: "https://i.postimg.cc/Dwg9djGb/10.jpg"
     },
     {
@@ -374,7 +374,7 @@ const items = [
         unit: "包",
         groupPrice: 100,
         retailPrice: 110,
-        storage: "冷凍",
+        storage: "素食/冷凍",
         photo: "https://i.postimg.cc/yY8FvV35/image.jpg"
     },
     {
@@ -754,11 +754,11 @@ const items = [
         category: ["奶製品"],
         model: "2-00009",
         name: "安佳起士",
-        desc: "84片/素食",
+        desc: "84片",
         unit: "包",
         groupPrice: 380,
         retailPrice: 405,
-        storage: "冷藏",
+        storage: "素食/冷藏",
         photo: "https://i.postimg.cc/wjSLqL48/image.png"
     },
     {
