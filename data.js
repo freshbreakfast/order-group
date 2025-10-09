@@ -657,8 +657,8 @@ const items = [
         name: "檸檬汁顆粒",
         desc: "10小包",
         unit: "袋",
-        groupPrice: 590,
-        retailPrice: 620,
+        groupPrice: 610,
+        retailPrice: 630,
         storage: "冷凍",
         photo: "https://i.postimg.cc/j2LSnkC8/jpg.jpg"
     },
