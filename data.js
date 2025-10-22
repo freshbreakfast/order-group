@@ -33,8 +33,8 @@ const items = [
         name: "牛肉堡",
         desc: "正點 80g＊10片",
         unit: "包",
-        groupPrice: 205,
-        retailPrice: 225,
+        groupPrice: 215,
+        retailPrice: 235,
         storage: "冷凍",
         photo: "https://i.postimg.cc/Kjy0RC9b/image.jpg"
     }, {
