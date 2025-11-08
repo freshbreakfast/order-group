@@ -582,7 +582,7 @@ const items = [
         unit: "包",
         groupPrice: 70,
         retailPrice: 80,
-        storage: "優惠券半價:$40/冷藏",
+        storage: "冷藏",
         photo: "https://i.postimg.cc/59Xf9VCK/image.jpg"
     },
     {
@@ -593,7 +593,7 @@ const items = [
         unit: "包",
         groupPrice: 70,
         retailPrice: 80,
-        storage: "優惠券半價:$40/冷藏",
+        storage: "冷藏",
         photo: "https://i.postimg.cc/xCfrQVrg/image.jpg"
     },
     {
@@ -747,7 +747,7 @@ const items = [
         unit: "桶",
         groupPrice: 310,
         retailPrice: 340,
-        storage: "優惠券特價:$280/常溫",
+        storage: "常溫",
         photo: "https://i.postimg.cc/26xZ7Jkr/image.jpg"
     },
     {
