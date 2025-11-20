@@ -849,5 +849,4 @@ const items = [
         storage: "冷藏",
         photo: "https://i.postimg.cc/L6zv4qHG/yan-mai-dou-jiang.jpg"
     }, 
-    {
-    ];
+];
