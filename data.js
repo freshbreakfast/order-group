@@ -578,7 +578,7 @@ const items = [
         category: ["飲品", "熱門商品"],
         model: "2-00033",
         name: "(有糖)豆漿-有蓋",
-        desc: "鮮到味 非基改豆漿 2500ml",
+        desc: "二木子 非基改豆漿 2500ml",
         unit: "包",
         groupPrice: 70,
         retailPrice: 80,
@@ -589,7 +589,7 @@ const items = [
         category: ["飲品"],
         model: "2-00034",
         name: "(無糖)豆漿-有蓋",
-        desc: "鮮到味 非基改豆漿 2500ml" ,
+        desc: "二木子 非基改豆漿 2500ml" ,
         unit: "包",
         groupPrice: 70,
         retailPrice: 80,
@@ -826,5 +826,28 @@ const items = [
         retailPrice: 27,
         storage: "常溫",
         photo: ""
-    }
-];
+    },
+    {
+        category: ["飲品"],
+        model: "2-00015",
+        name: "金黃南瓜豆漿",
+        desc: "二木子 2500m",
+        unit: "包",
+        groupPrice: 95,
+        retailPrice: 125,
+        storage: "冷藏",
+        photo: "https://i.postimg.cc/kGN8CbxL/nan-gua-dou-jiang.jpg"
+    },        
+    {
+        category: ["飲品"],
+        model: "2-00015",
+        name: "高纖燕麥豆漿",
+        desc: "二木子 2500ml",
+        unit: "包",
+        groupPrice: 95,
+        retailPrice: 125,
+        storage: "冷藏",
+        photo: "https://i.postimg.cc/L6zv4qHG/yan-mai-dou-jiang.jpg"
+    }, 
+    {
+    ];
