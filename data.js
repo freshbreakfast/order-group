@@ -833,7 +833,7 @@ const items = [
         name: "金黃南瓜豆漿",
         desc: "二木子 2500m",
         unit: "包",
-        groupPrice: 9０,
+        groupPrice: 90,
         retailPrice: 125,
         storage: "冷藏",
         photo: "https://i.postimg.cc/kGN8CbxL/nan-gua-dou-jiang.jpg"
@@ -844,7 +844,7 @@ const items = [
         name: "高纖燕麥豆漿",
         desc: "二木子 2500ml",
         unit: "包",
-        groupPrice: 9０,
+        groupPrice: 90,
         retailPrice: 125,
         storage: "冷藏",
         photo: "https://i.postimg.cc/L6zv4qHG/yan-mai-dou-jiang.jpg"
