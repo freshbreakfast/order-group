@@ -252,7 +252,7 @@
                 if (qty > 0) {
                     const item = items.find(i => i.name === itemName);
                     if (!item) continue;
-                    const unitPrice = item.groupPrice;
+                    const unitPrice = item.groupPrice ? item.groupPrice : item.directPrice;
                     const subTotal = unitPrice * qty;
                     total += subTotal;
                     hasOrder = true;
