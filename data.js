@@ -580,7 +580,7 @@ const items = [
         name: "(有糖)豆漿-有蓋",
         desc: "二木子 非基改豆漿 2500ml",
         unit: "包",
-        groupPrice: 70,
+        official storePrice: 70,
         retailPrice: 80,
         storage: "冷藏",
         photo: "https://i.postimg.cc/59Xf9VCK/image.jpg"
@@ -591,7 +591,7 @@ const items = [
         name: "(無糖)豆漿-有蓋",
         desc: "二木子 非基改豆漿 2500ml" ,
         unit: "包",
-        groupPrice: 70,
+        official sotrePrice: 70,
         retailPrice: 80,
         storage: "冷藏",
         photo: "https://i.postimg.cc/xCfrQVrg/image.jpg"
@@ -723,8 +723,8 @@ const items = [
         name: "新脆薯(粗)",
         desc: "2kg",
         unit: "包",
-        groupPrice: 255,
-        retailPrice: 280,
+        groupPrice: 230,
+        retailPrice: 255,
         storage: "冷凍",
         photo: "https://i.postimg.cc/qBbtB2gb/image.jpg"
     },
@@ -833,7 +833,7 @@ const items = [
         name: "金黃南瓜豆漿",
         desc: "二木子 2500m",
         unit: "包",
-        groupPrice: 90,
+        official storePrice: 90,
         retailPrice: 125,
         storage: "冷藏",
         photo: "https://i.postimg.cc/kGN8CbxL/nan-gua-dou-jiang.jpg"
@@ -844,7 +844,7 @@ const items = [
         name: "高纖燕麥豆漿",
         desc: "二木子 2500ml",
         unit: "包",
-        groupPrice: 90,
+        official storePrice: 90,
         retailPrice: 125,
         storage: "冷藏",
         photo: "https://i.postimg.cc/L6zv4qHG/yan-mai-dou-jiang.jpg"
