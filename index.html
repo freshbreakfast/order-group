@@ -224,7 +224,7 @@
                 <div class="name">${item.name}&nbsp;&nbsp;&nbsp;${item.desc}/${item.unit} (${item.storage})</div>
                 <img src="${item.photo || 'https://via.placeholder.com/300'}" />
                 <div class="price">
-                    原價：<span class="retail">$${item.retailPrice}</span> 💰 團購價：$${item.groupPrice}
+                    原價：<span class="retail">$${item.retailPrice}</span> 💰 ${item.groupPrice ? `團購價：$${item.groupPrice}` : `直營價：$${item.directPrice}`}
                 </div>
                 <button class="qty-btn" onclick="changeQty('${item.name}', -1)">－</button>
                 <span class="qty" data-name="${item.name}">0</span>
