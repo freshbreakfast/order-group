@@ -213,7 +213,18 @@ const items = [
         photo: "https://i.postimg.cc/15W28KnT/2.jpg"
     },
     {
-        category: ["雞肉類", "熱門商品"],
+    category: ["雞肉類", "熱門商品"],
+        model: "1-00088",
+        name: "麥克雞塊",
+        desc: "1kg",
+        unit: "包",
+        groupPrice: 165,
+        retailPrice: 180,
+        storage: "冷凍",
+        photo: "https://i.postimg.cc/7YjJ9b42/ji-kuai.png"
+    },
+    {   
+            category: ["雞肉類", "熱門商品"],
         model: "1-00087",
         name: "銷魂雞塊",
         desc: "1kg",
