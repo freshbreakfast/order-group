@@ -23,7 +23,7 @@ const items = [
         desc: "鮮到味 50g＊20粒",
         unit: "盤",
         groupPrice: 155,
-        retailPrice: 170,
+        retailPrice: 185,
         storage: "冷凍",
         photo: "https://i.postimg.cc/kXQJtzF4/image.jpg"
     },
@@ -66,7 +66,7 @@ const items = [
         desc: "東芳 3kg",
         unit: "條",
         groupPrice: 500,
-        retailPrice: 525,
+        retailPrice: 530,
         storage: "冷凍",
         photo: "https://i.postimg.cc/XY21QHvK/image.jpg"
     },
@@ -110,7 +110,7 @@ const items = [
         desc: "10片",
         unit: "包",
         groupPrice: 150,
-        retailPrice: 165,
+        retailPrice: 170,
         storage: "冷凍",
         photo: "https://i.postimg.cc/26H56fjb/鮮蝦.jpg"
     },
@@ -121,7 +121,7 @@ const items = [
         desc: "10片",
         unit: "包",
         groupPrice: 150,
-        retailPrice: 165,
+        retailPrice: 170,
         storage: "冷凍",
         photo: "https://i.postimg.cc/c1mRRKCw/image.jpg"
     },
@@ -187,7 +187,7 @@ const items = [
         desc: "12入",
         unit: "包",
         groupPrice: 290,
-        retailPrice: 315,
+        retailPrice: 320,
         storage: "冷凍",
         photo: "https://i.postimg.cc/mryDvH0S/韓_式.jpg"
     },
@@ -340,7 +340,7 @@ const items = [
         desc: "鮮到味 10片",
         unit: "包",
         groupPrice: 105,
-        retailPrice: 115,
+        retailPrice: 120,
         storage: "冷凍",
         photo: "https://i.postimg.cc/dVJqR649/image.jpg"
     },
@@ -351,7 +351,7 @@ const items = [
         desc: "5片",
         unit: "包",
         groupPrice: 115,
-        retailPrice: 125,
+        retailPrice: 130,
         storage: "冷凍",
         photo: "https://i.postimg.cc/GpH7NFBW/image.jpg"
     },
@@ -362,7 +362,7 @@ const items = [
         desc: "5片",
         unit: "包",
         groupPrice: 105,
-        retailPrice: 115,
+        retailPrice: 120,
         storage: "冷凍",
         photo: "https://i.postimg.cc/PJhMtYxr/1.jpg"
     },
@@ -373,7 +373,7 @@ const items = [
         desc: "5片",
         unit: "包",
         groupPrice: 115,
-        retailPrice: 125,
+        retailPrice: 130,
         storage: "冷凍",
         photo: "https://i.postimg.cc/qRQN33w7/image.jpg"
     },
@@ -384,7 +384,7 @@ const items = [
         desc: "4片",
         unit: "包",
         groupPrice: 100,
-        retailPrice: 110,
+        retailPrice: 120,
         storage: "素食/冷凍",
         photo: "https://i.postimg.cc/yY8FvV35/image.jpg"
     },
@@ -395,7 +395,7 @@ const items = [
         desc: "內容物含牛肉, 1入",
         unit: "個",
         groupPrice: 32,
-        retailPrice: 35,
+        retailPrice: 37,
         storage: "冷凍",
         photo: "https://i.postimg.cc/Fz9jtvWY/image.jpg"
     },
@@ -406,7 +406,7 @@ const items = [
         desc: "內容物含牛肉, 1入",
         unit: "個",
         groupPrice: 32,
-        retailPrice: 35,
+        retailPrice: 37,
         storage: "冷凍",
         photo: "https://i.postimg.cc/Fz9jtvWY/image.jpg"
     },
@@ -417,7 +417,7 @@ const items = [
         desc: "1入",
         unit: "個",
         groupPrice: 15,
-        retailPrice: 16,
+        retailPrice: 18,
         storage: "冷凍",
         photo: "https://i.postimg.cc/vmJzNpwn/image.jpg"
     },
@@ -428,7 +428,7 @@ const items = [
         desc: "15片",
         unit: "包",
         groupPrice: 130,
-        retailPrice: 140,
+        retailPrice: 150,
         storage: "冷凍",
         photo: "https://i.postimg.cc/FKLb3DkH/image.jpg"
     },
@@ -439,7 +439,7 @@ const items = [
         desc: "10入",
         unit: "盒",
         groupPrice: 160,
-        retailPrice: 170,
+        retailPrice: 180,
         storage: "冷凍",
         photo: "https://i.postimg.cc/zGW3kM76/image.png"
     },
@@ -450,7 +450,7 @@ const items = [
         desc: "6入",
         unit: "條",
         groupPrice: 125,
-        retailPrice: 135,
+        retailPrice: 140,
         storage: "冷凍",
         photo: "https://i.postimg.cc/4xMbYrd0/image.jpg"
     },
@@ -461,7 +461,7 @@ const items = [
         desc: "6入",
         unit: "條",
         groupPrice: 130,
-        retailPrice: 140,
+        retailPrice: 150,
         storage: "冷凍",
         photo: "https://i.postimg.cc/HxLpFP0p/鬆餅.jpg"
     },
@@ -483,7 +483,7 @@ const items = [
         desc: "10個",
         unit: "包",
         groupPrice: 140,
-        retailPrice: 150,
+        retailPrice: 160,
         storage: "冷凍",
         photo: "https://i.postimg.cc/J4Hh1gf0/雜糧.jpg"
     },
@@ -494,7 +494,7 @@ const items = [
         desc: "無配料 20片",
         unit: "包",
         groupPrice: 140,
-        retailPrice: 150,
+        retailPrice: 160,
         storage: "冷凍",
         photo: "https://i.postimg.cc/xdy1D78h/image.jpg"
     },
@@ -505,7 +505,7 @@ const items = [
         desc: "禾家香 200粒",
         unit: "包",
         groupPrice: 140,
-        retailPrice: 150,
+        retailPrice: 160,
         storage: "冷凍",
         photo: "https://i.postimg.cc/3wVSHkmd/image.jpg"
     },
@@ -516,7 +516,7 @@ const items = [
         desc: "奇巧 100粒",
         unit: "包",
         groupPrice: 130,
-        retailPrice: 140,
+        retailPrice: 150,
         storage: "冷凍",
         photo: "https://i.postimg.cc/j2vfx25V/image.png"
     },
@@ -527,7 +527,7 @@ const items = [
         desc: "奇津 50粒",
         unit: "包",
         groupPrice: 130,
-        retailPrice: 140,
+        retailPrice: 150,
         storage: "冷凍",
         photo: "https://i.postimg.cc/FRFRNKvX/1.jpg"
     },
@@ -538,7 +538,7 @@ const items = [
         desc: "內容物含牛肉, 1入",
         unit: "包",
         groupPrice: 33,
-        retailPrice: 35,
+        retailPrice: 38,
         storage: "冷凍",
         photo: "https://i.postimg.cc/ZqtvtZ0J/image.jpg"
     },
@@ -571,7 +571,7 @@ const items = [
         desc: "140g",
         unit: "包",
         groupPrice: 25,
-        retailPrice: 28,
+        retailPrice: 30,
         storage: "冷藏",
         photo: "https://i.postimg.cc/Dy0X1Bt3/黑胡椒.jpg"
     },
@@ -582,7 +582,7 @@ const items = [
         desc: "140g",
         unit: "包",
         groupPrice: 25,
-        retailPrice: 28,
+        retailPrice: 30,
         storage: "冷藏",
         photo: "https://i.postimg.cc/Dy0X1Bt3/黑胡椒.jpg"
     }, {
@@ -691,7 +691,7 @@ const items = [
         desc: "1台斤",
         unit: "包",
         groupPrice: 60,
-        retailPrice: 70,
+        retailPrice: 75,
         storage: "常溫",
         photo: "https://i.postimg.cc/pXsBH9tR/image.jpg"
     },
@@ -702,7 +702,7 @@ const items = [
         desc: "900g",
         unit: "罐",
         groupPrice: 195,
-        retailPrice: 210,
+        retailPrice: 220,
         storage: "常溫",
         photo: "https://i.postimg.cc/jqF5YKkB/image.jpg"
     },
@@ -713,7 +713,7 @@ const items = [
         desc: "450g",
         unit: "罐",
         groupPrice: 135,
-        retailPrice: 145,
+        retailPrice: 150,
         storage: "常溫",
         photo: "https://i.postimg.cc/G2vQwqb5/image.jpg"
     },
@@ -746,7 +746,7 @@ const items = [
         desc: "20片",
         unit: "條",
         groupPrice: 190,
-        retailPrice: 200,
+        retailPrice: 210,
         storage: "冷凍",
         photo: "https://i.postimg.cc/Xvbq18DJ/1.jpg"
     },
