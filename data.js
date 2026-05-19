@@ -838,15 +838,4 @@ const items = [
         storage: "冷藏",
         photo: "https://i.postimg.cc/kGN8CbxL/nan-gua-dou-jiang.jpg"
     },        
-    {
-        category: ["飲品"],
-        model: "2-00015",
-        name: "高纖燕麥豆漿",
-        desc: "二木子 2500ml",
-        unit: "包",
-        directPrice: 90,
-        retailPrice: 125,
-        storage: "冷藏",
-        photo: "https://i.postimg.cc/L6zv4qHG/yan-mai-dou-jiang.jpg"
-    }, 
-];
+    ];
