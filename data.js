@@ -364,7 +364,7 @@ const items = [
         groupPrice: 115,
         retailPrice: 130,
         storage: "冷凍",
-        photo: "https://i.postimg.cc/qRQN33w7/image.jpg"
+        photo: "https://i.postimg.cc/bvBxZFQ2/cong-rou-bing1.png"
     },
     {
         category: ["餅.pizza.麵包"],
