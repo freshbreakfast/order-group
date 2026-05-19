@@ -311,18 +311,7 @@ const items = [
         storage: "冷凍",
         photo: "https://i.postimg.cc/HnZ8fy8N/2.jpg"
     },
-    {
-        category: ["餅.pizza.麵包"],
-        model: "1-00012-1",
-        name: "蛋餅皮(原味)10片",
-        desc: "鮮到味 10片",
-        unit: "包",
-        groupPrice: 39,
-        retailPrice: 49,
-        storage: "素食/冷凍",
-        photo: "https://i.postimg.cc/Dwg9djGb/10.jpg"
-    },
-    {
+     {
         category: ["餅.pizza.麵包"],
         model: "1-00012-2",
         name: "蛋餅皮(青蔥)10片",
