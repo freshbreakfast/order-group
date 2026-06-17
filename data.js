@@ -229,8 +229,8 @@ const items = [
         name: "銷魂雞塊",
         desc: "1kg",
         unit: "包",
-        groupPrice: 190,
-        retailPrice: 210,
+        groupPrice: 205,
+        retailPrice: 235,
         storage: "冷凍",
         photo: "https://i.postimg.cc/NfKKKLHg/image.png"
     },
