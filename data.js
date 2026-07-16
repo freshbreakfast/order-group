@@ -833,7 +833,7 @@ const items = [
         name: "金黃南瓜豆漿",
         desc: "二木子 2500m",
         unit: "包",
-        directPrice: 90,
+        directPrice: 80,
         retailPrice: 125,
         storage: "冷藏",
         photo: "https://i.postimg.cc/kGN8CbxL/nan-gua-dou-jiang.jpg"
