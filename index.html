@@ -263,7 +263,8 @@
                     
                     const unitPrice = item.groupPrice ? item.groupPrice : item.directPrice;
                     const subTotal = unitPrice * qty;
-
+                    let appliedDiscount = "";
+                    
                     // 若屬於扣 15 元類別且該類別總數量 >= 2，每包折 15 元
                     if (discount15Items.includes(itemName) && count15 >= 2) {
                         unitPrice -= 15;
