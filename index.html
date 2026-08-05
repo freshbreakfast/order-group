@@ -261,7 +261,7 @@
                     const item = items.find(i => i.name === itemName);
                     if (!item) continue;
                     
-                    const unitPrice = item.groupPrice ? item.groupPrice : item.directPrice;
+                    let unitPrice = item.groupPrice ? item.groupPrice : item.directPrice;
                     const subTotal = unitPrice * qty;
                     let appliedDiscount = "";
                     
