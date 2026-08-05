@@ -580,7 +580,7 @@ const items = [
         name: "(有糖)二木子非基改豆漿-有蓋",
         desc: "2包以上特價70/包(可有/無糖混搭) 2500ml",
         unit: "包",
-        directPrice: 75,
+        groupPrice : 75,
         retailPrice: 80,
         storage: "冷藏",
         photo: "https://i.postimg.cc/59Xf9VCK/image.jpg"
@@ -591,7 +591,7 @@ const items = [
         name: "(無糖)二木子非基改豆漿-有蓋",
         desc: "2包以上特價70/包(可有/無糖混搭) 2500ml" ,
         unit: "包",
-        directPrice: 75,
+        groupPrice : 75,
         retailPrice: 80,
         storage: "冷藏",
         photo: "https://i.postimg.cc/xCfrQVrg/image.jpg"
@@ -833,7 +833,7 @@ const items = [
         name: "二木子金黃南瓜非基改豆漿-有蓋",
         desc: "2包以上特價80/包 2500m",
         unit: "包",
-        directPrice: 95,
+        groupPrice : 95,
         retailPrice: 125,
         storage: "冷藏",
         photo: "https://i.postimg.cc/kGN8CbxL/nan-gua-dou-jiang.jpg"
