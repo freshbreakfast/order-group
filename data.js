@@ -577,8 +577,8 @@ const items = [
     }, {
         category: ["飲品", "熱門商品"],
         model: "2-00033",
-        name: "(有糖)豆漿-有蓋",
-        desc: "二木子 非基改豆漿 2包特價140 2500ml",
+        name: "(有糖)二木子非基改豆漿-有蓋",
+        desc: "2包以上特價70/包(可有/無糖混搭) 2500ml",
         unit: "包",
         directPrice: 75,
         retailPrice: 80,
@@ -588,8 +588,8 @@ const items = [
     {
         category: ["飲品"],
         model: "2-00034",
-        name: "(無糖)豆漿-有蓋",
-        desc: "二木子 非基改豆漿 2包特價140 2500ml" ,
+        name: "(無糖)二木子非基改豆漿-有蓋",
+        desc: "2包以上特價70/包(可有/無糖混搭) 2500ml" ,
         unit: "包",
         directPrice: 75,
         retailPrice: 80,
@@ -830,8 +830,8 @@ const items = [
     {
         category: ["飲品"],
         model: "2-00015",
-        name: "金黃南瓜豆漿",
-        desc: "二木子 2包特價160 2500m",
+        name: "二木子金黃南瓜非基改豆漿-有蓋",
+        desc: "2包以上特價80/包 2500m",
         unit: "包",
         directPrice: 95,
         retailPrice: 125,
