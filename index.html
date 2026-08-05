@@ -252,33 +252,27 @@
             const discount15Items = ["二木子金黃南瓜非基改豆漿-有蓋"];
             const discount5Items = ["(有糖)二木子非基改豆漿-有蓋", "(無糖)二木子非基改豆漿-有蓋"];
             
-            // 計算各優惠類別的總數量
-            let count15 = discount15Items.reduce((sum, name) => sum + (cart[name] || 0), 0);
-            let count5 = discount5Items.reduce((sum, name) => sum + (cart[name] || 0), 0);
-            
             for (const [itemName, qty] of Object.entries(cart)) {
                 if (qty > 0) {
                     const item = items.find(i => i.name === itemName);
                     if (!item) continue;
                     
                     let unitPrice = item.groupPrice ? item.groupPrice : item.directPrice;
-                    const subTotal = unitPrice * qty;
-                    let appliedDiscount = "";
                     
                     // 若屬於扣 15 元類別且該類別總數量 >= 2，每包折 15 元
-                    if (discount15Items.includes(itemName) && count15 >= 2) {
+                    if (discount15Items.includes(itemName) && qty >= 2) {
                         unitPrice = unitPrice - 15;
-                        appliedDiscount = " (折15元優惠)";
                     }
                     // 若屬於扣 5 元類別且該類別總數量 >= 2，每包折 5 元
-                    else if (discount5Items.includes(itemName) && count5 >= 2) {
+                    else if (discount5Items.includes(itemName) && qty >= 2) {
                         unitPrice = unitPrice - 5;
-                        appliedDiscount = " (折5元優惠)";
                     }
+                    
+                    const subTotal = unitPrice * qty;
                     
                     total += subTotal;
                     hasOrder = true;
-                    msg += `${itemName} x ${qty}${appliedDiscount}= ${subTotal}元\n`;
+                    msg += `${itemName} x ${qty}= ${subTotal}元\n`;
                 }
             }
 
