@@ -248,15 +248,36 @@
             let total = 0;
             let hasOrder = false;
 
+            // 定義優惠類別品項
+            const discount15Items = ["金黃南瓜豆漿"];
+            const discount5Items = ["(有糖)豆漿-有蓋", "(無糖)豆漿-有蓋"];
+            
+            // 計算各優惠類別的總數量
+            let count15 = discount15Items.reduce((sum, name) => sum + (cart[name] || 0), 0);
+            let count5 = discount5Items.reduce((sum, name) => sum + (cart[name] || 0), 0);
+            
             for (const [itemName, qty] of Object.entries(cart)) {
                 if (qty > 0) {
                     const item = items.find(i => i.name === itemName);
                     if (!item) continue;
+                    
                     const unitPrice = item.groupPrice ? item.groupPrice : item.directPrice;
                     const subTotal = unitPrice * qty;
+
+                    // 若屬於扣 15 元類別且該類別總數量 >= 2，每包折 15 元
+                    if (discount15Items.includes(itemName) && count15 >= 2) {
+                        unitPrice -= 15;
+                        appliedDiscount = " (折15元優惠)";
+                    }
+                    // 若屬於扣 5 元類別且該類別總數量 >= 2，每包折 5 元
+                    else if (discount5Items.includes(itemName) && count5 >= 2) {
+                        unitPrice -= 5;
+                        appliedDiscount = " (折5元優惠)";
+                    }
+                    
                     total += subTotal;
                     hasOrder = true;
-                    msg += `${itemName} x ${qty}\n`;
+                    msg += `${itemName} x ${qty}${appliedDiscount}= ${subTotal}元\n`;
                 }
             }
 
