@@ -251,6 +251,10 @@
             // 定義優惠類別品項
             const discount15Items = ["二木子金黃南瓜非基改豆漿-有蓋"];
             const discount5Items = ["(有糖)二木子非基改豆漿-有蓋", "(無糖)二木子非基改豆漿-有蓋"];
+
+            // 計算各優惠類別的總數量
+            let count15 = discount15Items.reduce((sum, name) => sum + (cart[name] || 0), 0);
+            let count5 = discount5Items.reduce((sum, name) => sum + (cart[name] || 0), 0);
             
             for (const [itemName, qty] of Object.entries(cart)) {
                 if (qty > 0) {
@@ -260,11 +264,11 @@
                     let unitPrice = item.groupPrice ? item.groupPrice : item.directPrice;
                     
                     // 若屬於扣 15 元類別且該類別總數量 >= 2，每包折 15 元
-                    if (discount15Items.includes(itemName) && qty >= 2) {
+                    if (discount15Items.includes(itemName) && count15 >= 2) {
                         unitPrice = unitPrice - 15;
                     }
                     // 若屬於扣 5 元類別且該類別總數量 >= 2，每包折 5 元
-                    else if (discount5Items.includes(itemName) && qty >= 2) {
+                    else if (discount5Items.includes(itemName) && count5 >= 2) {
                         unitPrice = unitPrice - 5;
                     }
                     
